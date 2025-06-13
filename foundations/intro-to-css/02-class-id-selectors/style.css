@@ -1,0 +1,21 @@
+/* style.css */
+
+.odd {
+    background-color: hsl(325, 62%, 79%);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.cooler,
+#four {
+    font-size: 24px;
+}
+
+#two {
+    color: #4484e4;
+    font-size: 36px;
+}
+
+#four {
+    background-color: lab(87.84% -44.47 35.2);
+    font-weight: bold;
+}
