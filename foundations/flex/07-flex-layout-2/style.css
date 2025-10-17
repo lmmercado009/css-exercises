@@ -2,28 +2,82 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  align-content: center;
+  flex-shrink: 1;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-content: center;
+  text-align: center;
+  flex-shrink: 1;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-grow: 5;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 12px 12px 128px 12px;
+  max-width: 300px;
 }
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 12px;
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+/* change body display to flex columns */
+/* change middle display to flex rows */
+/* change main display to flex wrap */
+/* assign flex properties to cards */
+/* add padding, justify, and align properties to cards */
+/* add max-width to cards */
+/* assign flex-basis to sidebar */
+/* update header text formatting */
